@@ -35,7 +35,7 @@ public class MyEndpoint {
     }
 
     @ApiMethod(name = "getJoke")
-    public MyBean tellJoke() {
+    public MyBean getJoke() {
         MyBean respons = new MyBean();
         JokeClass jokeClass = new JokeClass();
         respons.setData(jokeClass.getJoke());

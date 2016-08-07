@@ -23,7 +23,7 @@ public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, S
         if(myApiService == null) {  // Only do this once
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
-                .setRootUrl("http://192.168.1.2:8080/_ah/api/")
+                .setRootUrl("https://1-dot-builditbigger-1470592984763.appspot.com/_ah/api/")
                 .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                     @Override
                     public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
