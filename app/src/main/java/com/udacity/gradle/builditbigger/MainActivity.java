@@ -49,7 +49,6 @@ public class MainActivity extends ActionBarActivity {
     public void tellJoke(View view){
         EndpointsAsyncTask endpointsAsyncTask = new EndpointsAsyncTask();
         endpointsAsyncTask.execute(new Pair<Context, String>(this, null));
-        Toast.makeText(this, "derp", Toast.LENGTH_SHORT).show();
     }
 
 
